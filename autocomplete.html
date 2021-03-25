@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Autocomplete Demo</title>
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.224/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.224/styles/kendo.office365.min.css" />
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.224/styles/kendo.office365.mobile.min.css" />
+        <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css">
+        <script src="https://kendo.cdn.telerik.com/2021.1.224/js/jquery.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2021.1.224/js/kendo.all.min.js"></script>
+        <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+    
+        <script src="azurekey.js"></script>
+        <script src="autocomplete.js"></script>
+    </head>
+    <body>
+        <input type="text" id="queryText" style="width: 100%;" />
+        <p></p>
+        <div id="mapControl" style="position: relative;width:100%;min-width:290px;height:500px;"></div>
+
+        <script id="autoCompleteItemTemplate" type="x-kendo-template">
+            # var suggestionLabel = address.freeformAddress; #
+            # if (poi && poi.name) { #
+            #   suggestionLabel = poi.name + ' - (' + suggestionLabel + ')'; # 
+            # } #
+            <span>#:suggestionLabel#</span>
+        </script>
+    </body>
+</html>
