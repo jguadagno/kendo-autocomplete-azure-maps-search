@@ -55,7 +55,7 @@ $(() => {
 
     $('#queryText').kendoAutoComplete({
         minLength: 3,
-        placeHolder: "Select a venue",
+        placeholder: "Select a venue",
         dataValueField: "id",
         dataTextField: "poi.name",
         template: $('#autoCompleteItemTemplate').html(),
