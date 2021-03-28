@@ -11,6 +11,5 @@ For this sample to work, you will need to
 ```javascript
 const azureKey = "<replace with your key";
 ```
-
-    * Replace the `<replace with your key>` with your Azure Maps Client id.
-
+   
+Please, replace the `<replace with your key>` with your Azure Maps Client id.
